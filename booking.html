@@ -5,7 +5,26 @@
   <title>Airlines Portal - Booking</title> 
   <link rel="stylesheet" href="style.css">
 
-  <!-- SALESFORCE AGENTFORCE SNIPPET - PASTE HERE LATER -->
+  <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DgL00000LWTHJ',
+				'Airlines_Agent_Deployment',
+				'https://orgfarm-d85aabb51c-dev-ed.develop.my.site.com/ESWAirlinesAgentDeploym1778499811694',
+				{
+					scrt2URL: 'https://orgfarm-d85aabb51c-dev-ed.develop.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://orgfarm-d85aabb51c-dev-ed.develop.my.site.com/ESWAirlinesAgentDeploym1778499811694/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
 
 </head>
 <body>
