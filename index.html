@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Airlines Portal - Home</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- SALESFORCE AGENTFORCE SNIPPET - PASTE HERE LATER -->
+
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="flights.html">Flights</a>
+    <a href="booking.html">Booking</a>
+  </nav>
+
+  <div class="container">
+    <h1>Welcome to Airlines Portal</h1>
+
+    <div class="card">
+      <h3>About Us</h3>
+      <p>We provide domestic and international flights with affordable pricing and premium support.</p>
+    </div>
+
+    <div class="card">
+      <h3>Support Information</h3>
+      <p>Customers can search flights, manage bookings, cancel tickets, and track booking status.</p>
+      <p>Support Email: support@airlines.com</p>
+      <p>Support Number: +91 9876543210</p>
+    </div>
+  </div>
+
+  <script>
+    window.pageContext = {
+      page: "home",
+      title: "Home Page",
+      data: {
+        company: "Airlines Portal",
+        supportEmail: "support@airlines.com",
+        supportNumber: "+91 9876543210",
+        description: "We provide domestic and international flights with affordable pricing."
+      }
+    };
+  </script>
+  <script src="chat.js"></script>
+
+</body>
+</html>
