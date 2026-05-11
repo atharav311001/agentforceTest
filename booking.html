@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Airlines Portal - Booking</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- SALESFORCE AGENTFORCE SNIPPET - PASTE HERE LATER -->
+
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="flights.html">Flights</a>
+    <a href="booking.html">Booking</a>
+  </nav>
+
+  <div class="container">
+    <h1>Manage Your Booking</h1>
+
+    <div class="card">
+      <h3>How to Book</h3>
+      <p>1. Go to the Flights page and choose your flight.</p>
+      <p>2. Click Book Now and fill in passenger details.</p>
+      <p>3. Pay online via UPI, Card, or Net Banking.</p>
+      <p>4. You will receive a confirmation on your email.</p>
+    </div>
+
+    <div class="card">
+      <h3>Cancellation Policy</h3>
+      <p>Cancel 48 hours before departure: Full refund.</p>
+      <p>Cancel 24 hours before departure: 50% refund.</p>
+      <p>Cancel less than 24 hours: No refund.</p>
+    </div>
+
+    <div class="card">
+      <h3>Track Your Booking</h3>
+      <p>Use your booking ID received on email to track status.</p>
+      <p>Contact support at support@airlines.com for help.</p>
+    </div>
+  </div>
+
+  <script>
+    window.pageContext = {
+      page: "booking",
+      title: "Booking Page",
+      data: {
+        cancellationPolicy: {
+          "48h_before": "Full refund",
+          "24h_before": "50% refund",
+          "less_than_24h": "No refund"
+        },
+        paymentMethods: ["UPI", "Credit Card", "Debit Card", "Net Banking"],
+        trackingInfo: "Use booking ID from confirmation email",
+        supportEmail: "support@airlines.com"
+      }
+    };
+  </script>
+  <script src="chat.js"></script>
+
+</body>
+</html>
