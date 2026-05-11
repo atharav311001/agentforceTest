@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Airlines Portal - Flights</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- SALESFORCE AGENTFORCE SNIPPET - PASTE HERE LATER -->
+
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="flights.html">Flights</a>
+    <a href="booking.html">Booking</a>
+  </nav>
+
+  <div class="container">
+    <h1>Available Flights</h1>
+
+    <div class="card">
+      <h3>Delhi → Mumbai</h3>
+      <p>Airline: Air India</p>
+      <p>Price: ₹5,000</p>
+      <p>Duration: 2 hours</p>
+      <p>Departure: 08:00 AM | Arrival: 10:00 AM</p>
+      <p>Class: Economy</p>
+    </div>
+
+    <div class="card">
+      <h3>Delhi → Bangalore</h3>
+      <p>Airline: IndiGo</p>
+      <p>Price: ₹6,500</p>
+      <p>Duration: 2 hours 45 mins</p>
+      <p>Departure: 11:00 AM | Arrival: 01:45 PM</p>
+      <p>Class: Economy</p>
+    </div>
+
+    <div class="card">
+      <h3>Mumbai → Goa</h3>
+      <p>Airline: SpiceJet</p>
+      <p>Price: ₹3,200</p>
+      <p>Duration: 1 hour 10 mins</p>
+      <p>Departure: 02:00 PM | Arrival: 03:10 PM</p>
+      <p>Class: Economy</p>
+    </div>
+  </div>
+
+  <script>
+    window.pageContext = {
+      page: "flights",
+      title: "Flights Page",
+      data: {
+        flights: [
+          { from: "Delhi", to: "Mumbai", airline: "Air India", price: "₹5000", duration: "2 hours", departure: "08:00 AM", arrival: "10:00 AM" },
+          { from: "Delhi", to: "Bangalore", airline: "IndiGo", price: "₹6500", duration: "2 hours 45 mins", departure: "11:00 AM", arrival: "01:45 PM" },
+          { from: "Mumbai", to: "Goa", airline: "SpiceJet", price: "₹3200", duration: "1 hour 10 mins", departure: "02:00 PM", arrival: "03:10 PM" }
+        ]
+      }
+    };
+  </script>
+  <script src="chat.js"></script>
+
+</body>
+</html>
